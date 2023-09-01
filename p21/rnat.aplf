@@ -1,0 +1,8 @@
+ rnat←{
+     ⎕←'GAUGGAACUUGACUACGUAAAUU'≡rna'GATGGAACTTGACTACGTAAATT'
+     ⎕←''≡rna'' ⍝ returns an empty vector
+     ⎕←'U'≡rna'T' ⍝ returns a scalar
+     ⍝ using the sample dataset
+     ⎕←'rosalind_rna_1_output.txt'≡∘rna⍥{⊃⊃⎕NGET ⍵ 1}'rosalind_rna_1_dataset.txt'
+     'test end'
+ }
